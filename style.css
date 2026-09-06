@@ -283,6 +283,12 @@ section.section{padding:96px 0;}
 .legal-page h2{font-size:1.25rem;margin-top:2em;color:var(--sage-dark);}
 .legal-page p{color:var(--ink-soft);max-width:70ch;}
 .legal-page em{color:var(--gold);font-style:normal;}
+
+/* ---------- Page 404 ---------- */
+.notfound{padding:110px 0 130px;}
+.notfound-inner{max-width:640px;}
+.notfound h1{font-size:clamp(2rem,4vw,2.8rem);}
+.notfound .lead{margin:22px 0 32px;}
 .site-footer{background:var(--ink);color:var(--cream-2);padding:56px 0 30px;text-align:center;}
 .logo-footer{color:#fff;justify-content:center;}
 .logo-footer span{color:var(--blush);}
