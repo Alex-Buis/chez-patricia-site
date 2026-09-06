@@ -5,6 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chez Patricia — Coffee shop &amp; salon de thé à Frelinghien</title>
 <meta name="description" content="Chez Patricia, coffee shop et salon de thé à Frelinghien (près de Lille). Goûters, boissons et gourmandises maison, ateliers créatifs, brunch et privatisation.">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Open Graph / partage réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chez Patricia">
+<meta property="og:title" content="Chez Patricia — Coffee shop & salon de thé à Frelinghien">
+<meta property="og:description" content="Goûters, boissons et gourmandises maison, ateliers créatifs, brunch et privatisation. Comme à la maison.">
+<meta property="og:image" content="https://chez-patricia-site.vercel.app/images/og-image.jpg">
+<meta property="og:url" content="https://chez-patricia-site.vercel.app/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chez Patricia — Coffee shop & salon de thé à Frelinghien">
+<meta name="twitter:description" content="Goûters, boissons et gourmandises maison, ateliers créatifs, brunch et privatisation.">
+<meta name="twitter:image" content="https://chez-patricia-site.vercel.app/images/og-image.jpg">
+
+<!-- Données structurées pour Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Chez Patricia",
+  "description": "Coffee shop & salon de thé, fait maison, comme à la maison.",
+  "url": "https://chez-patricia-site.vercel.app/",
+  "image": "https://chez-patricia-site.vercel.app/images/og-image.jpg",
+  "telephone": "+33681048692",
+  "email": "contact.chezpatricia@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 rue de la Chapelette",
+    "addressLocality": "Frelinghien",
+    "addressCountry": "FR"
+  },
+  "sameAs": [
+    "https://www.facebook.com/p/Chez-Patricia-61560653909491/",
+    "https://www.instagram.com/chezpatricia.coffee/"
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "18:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:00", "closes": "18:00" }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -51,9 +99,9 @@
       </div>
 
       <div class="hero-collage">
-        <div class="ph ph-1"><img src="images/hero-vitrine.jpg" alt="Vitrine du salon Chez Patricia décorée"></div>
-        <div class="ph ph-2"><img src="images/hero-eclairs.jpg" alt="Éclairs maison aux garnitures variées"></div>
-        <div class="ph ph-3"><img src="images/hero-gaufres.jpg" alt="Gaufres garnies de chantilly et de figues"></div>
+        <div class="ph ph-1"><img src="images/hero-vitrine.jpg" alt="Vitrine du salon Chez Patricia décorée" width="900" height="1118" fetchpriority="high"></div>
+        <div class="ph ph-2"><img src="images/hero-eclairs.jpg" alt="Éclairs maison aux garnitures variées" width="700" height="525" loading="lazy"></div>
+        <div class="ph ph-3"><img src="images/hero-gaufres.jpg" alt="Gaufres garnies de chantilly et de figues" width="600" height="750" loading="lazy"></div>
         <div class="tape tape-1"></div>
         <div class="tape tape-2"></div>
       </div>
@@ -154,12 +202,12 @@
       <p class="eyebrow">Galerie</p>
       <h2>Un aperçu de ce qui vous attend</h2>
       <div class="gallery-grid">
-        <div class="g-item g-tall"><img src="images/galerie-brunch.jpg" alt="Buffet de brunch avec pancakes, viennoiseries et fruits"></div>
-        <div class="g-item"><img src="images/galerie-tartine-saumon.jpg" alt="Tartine au saumon fumé et sa salade"></div>
-        <div class="g-item"><img src="images/galerie-burger.jpg" alt="Burger maison accompagné d'une salade"></div>
-        <div class="g-item g-tall"><img src="images/galerie-glace.jpg" alt="Coupe gourmande chocolat et biscuits"></div>
-        <div class="g-item"><img src="images/galerie-buffet-apero.jpg" alt="Mini burgers et pizzas pour un buffet apéro"></div>
-        <div class="g-item"><img src="images/galerie-mini-cupcakes.jpg" alt="Assortiment de mini cupcakes faits maison"></div>
+        <div class="g-item g-tall"><img src="images/galerie-brunch.jpg" alt="Buffet de brunch avec pancakes, viennoiseries et fruits" width="900" height="991" loading="lazy"></div>
+        <div class="g-item"><img src="images/galerie-tartine-saumon.jpg" alt="Tartine au saumon fumé et sa salade" width="800" height="1000" loading="lazy"></div>
+        <div class="g-item"><img src="images/galerie-burger.jpg" alt="Burger maison accompagné d'une salade" width="800" height="1000" loading="lazy"></div>
+        <div class="g-item g-tall"><img src="images/galerie-glace.jpg" alt="Coupe gourmande chocolat et biscuits" width="800" height="1002" loading="lazy"></div>
+        <div class="g-item"><img src="images/galerie-buffet-apero.jpg" alt="Mini burgers et pizzas pour un buffet apéro" width="800" height="1000" loading="lazy"></div>
+        <div class="g-item"><img src="images/galerie-mini-cupcakes.jpg" alt="Assortiment de mini cupcakes faits maison" width="900" height="1124" loading="lazy"></div>
       </div>
 
       <div class="gallery-actions">
@@ -177,12 +225,12 @@
 
       <div class="actus-grid">
         <article class="actu-card">
-          <div class="actu-img"><img src="images/actu-septembre-en-or.jpg" alt="Opération Septembre en or, solidaire avec l'association Iris"></div>
+          <div class="actu-img"><img src="images/actu-septembre-en-or.jpg" alt="Opération Septembre en or, solidaire avec l'association Iris" width="700" height="989" loading="lazy"></div>
           <h3>Septembre en or</h3>
           <p>Pour chaque sablé solidaire acheté, on soutient l'association Iris auprès des enfants malades.</p>
         </article>
         <article class="actu-card">
-          <div class="actu-img"><img src="images/actu-dessin-du-mois.jpg" alt="Le dessin du mois, thème animal préféré"></div>
+          <div class="actu-img"><img src="images/actu-dessin-du-mois.jpg" alt="Le dessin du mois, thème animal préféré" width="700" height="875" loading="lazy"></div>
           <h3>Le dessin du mois</h3>
           <p>Un nouveau thème chaque mois pour les petits artistes qui passent nous voir.</p>
         </article>
