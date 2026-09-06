@@ -18,9 +18,11 @@
 
     <nav class="nav" id="nav">
       <a href="#propos">L'endroit</a>
-      <a href="#offre">On propose quoi</a>
+      <a href="#carte">Carte</a>
       <a href="#galerie">Galerie</a>
-      <a href="#infos">Infos &amp; horaires</a>
+      <a href="#actus">Actus</a>
+      <a href="#infos">Infos</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <a href="tel:0681048692" class="btn btn-ghost header-cta">06 81 04 86 92</a>
@@ -103,6 +105,48 @@
     </div>
   </section>
 
+  <!-- CARTE / MENU -->
+  <section id="carte" class="section carte">
+    <div class="wrap">
+      <p class="eyebrow">La carte</p>
+      <h2>Un aperçu de ce qu'on sert</h2>
+      <p class="lead small">Tarifs indicatifs — carte complète et prix à jour affichés sur place.</p>
+
+      <div class="menu-grid">
+        <div class="menu-cat">
+          <h3>Boissons</h3>
+          <ul>
+            <li><span>Café / café gourmand</span><em>voir sur place</em></li>
+            <li><span>Chocolat chaud maison</span><em>voir sur place</em></li>
+            <li><span>Thé, infusion</span><em>voir sur place</em></li>
+          </ul>
+        </div>
+        <div class="menu-cat">
+          <h3>Gourmandises maison</h3>
+          <ul>
+            <li><span>Mini cupcakes, cookies, brookies</span><em>voir sur place</em></li>
+            <li><span>Éclairs &amp; pâtisseries du moment</span><em>voir sur place</em></li>
+            <li><span>Tartines &amp; burgers maison</span><em>voir sur place</em></li>
+          </ul>
+        </div>
+        <div class="menu-cat">
+          <h3>Brunch (week-end)</h3>
+          <ul>
+            <li><span>Formule adulte, à volonté</span><em>29 €</em></li>
+            <li><span>Formule enfant (- de 10 ans)</span><em>15 €</em></li>
+          </ul>
+        </div>
+        <div class="menu-cat">
+          <h3>Ateliers créatifs</h3>
+          <ul>
+            <li><span>Mercredis créatifs (dessin, DIY)</span><em>dès 12 €</em></li>
+            <li><span>Samedis créatifs (peinture sur céramique)</span><em>15 €</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- GALERIE -->
   <section id="galerie" class="section galerie">
     <div class="wrap">
@@ -120,6 +164,32 @@
       <div class="gallery-actions">
         <a href="https://www.facebook.com/p/Chez-Patricia-61560653909491/" target="_blank" rel="noopener" class="btn btn-outline">Voir plus sur Facebook</a>
         <a href="https://www.instagram.com/chezpatricia.coffee/" target="_blank" rel="noopener" class="btn btn-outline">Voir plus sur Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFOS / HORAIRES -->
+  <section id="actus" class="section actus">
+    <div class="wrap">
+      <p class="eyebrow">Actus</p>
+      <h2>Ce qui se passe en ce moment</h2>
+
+      <div class="actus-grid">
+        <article class="actu-card">
+          <div class="actu-img"><img src="images/actu-septembre-en-or.jpg" alt="Opération Septembre en or, solidaire avec l'association Iris"></div>
+          <h3>Septembre en or</h3>
+          <p>Pour chaque sablé solidaire acheté, on soutient l'association Iris auprès des enfants malades.</p>
+        </article>
+        <article class="actu-card">
+          <div class="actu-img"><img src="images/actu-dessin-du-mois.jpg" alt="Le dessin du mois, thème animal préféré"></div>
+          <h3>Le dessin du mois</h3>
+          <p>Un nouveau thème chaque mois pour les petits artistes qui passent nous voir.</p>
+        </article>
+        <article class="actu-card actu-card-text">
+          <h3>Envie de ne rien rater ?</h3>
+          <p>Toutes nos actus, ateliers et soirées sont annoncés en premier sur Instagram et Facebook.</p>
+          <a href="https://www.instagram.com/chezpatricia.coffee/" target="_blank" rel="noopener" class="btn btn-outline">Nous suivre</a>
+        </article>
       </div>
     </div>
   </section>
@@ -152,7 +222,53 @@
           <li><strong>E-mail</strong><br><a href="mailto:contact.chezpatricia@gmail.com">contact.chezpatricia@gmail.com</a></li>
           <li><strong>Instagram</strong><br><a href="https://www.instagram.com/chezpatricia.coffee/" target="_blank" rel="noopener">@chezpatricia.coffee</a></li>
         </ul>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=1+rue+de+la+Chapelette,+Fr%C3%A9linghien,+France&output=embed"
+            width="100%" height="260" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localisation Chez Patricia, Frélinghien"></iframe>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap contact-inner">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Une question, une envie<br>de privatisation ?</h2>
+        <p class="lead">Écrivez-nous pour un anniversaire, une privatisation, une commande traiteur ou toute autre demande — on vous répond rapidement.</p>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <label>
+          Nom
+          <input type="text" name="nom" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Sujet
+          <select name="sujet">
+            <option>Question générale</option>
+            <option>Anniversaire</option>
+            <option>Privatisation</option>
+            <option>Traiteur</option>
+            <option>Ateliers créatifs</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+        <p class="form-note" id="form-note"></p>
+      </form>
     </div>
   </section>
 

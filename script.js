@@ -47,3 +47,27 @@ updateStatus();
 
 // ---------- Année dans le footer ----------
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---------- Formulaire de contact (ouvre le client mail) ----------
+const contactForm = document.getElementById('contact-form');
+const formNote = document.getElementById('form-note');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(contactForm);
+    const nom = data.get('nom');
+    const email = data.get('email');
+    const sujet = data.get('sujet');
+    const message = data.get('message');
+
+    const body = `Nom : ${nom}\nE-mail : ${email}\n\n${message}`;
+    const mailtoUrl =
+      `mailto:contact.chezpatricia@gmail.com` +
+      `?subject=${encodeURIComponent('[Site] ' + sujet)}` +
+      `&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
+    formNote.textContent = 'Votre client mail va s\'ouvrir pour envoyer le message.';
+  });
+}
