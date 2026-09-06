@@ -21,6 +21,24 @@
 
 *,*::before,*::after{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
+
+/* ---------- Accessibilité ---------- */
+.skip-link{
+  position:absolute;left:-9999px;top:0;
+  background:var(--sage-dark);color:#fff;
+  padding:12px 20px;border-radius:0 0 10px 0;
+  z-index:200;font-size:.95rem;
+}
+.skip-link:focus{left:0;}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+  outline:2px solid var(--sage-dark);
+  outline-offset:2px;
+}
 body{
   margin:0;
   background:var(--cream);
@@ -259,7 +277,12 @@ section.section{padding:96px 0;}
 .contact-form button{align-self:flex-start;margin-top:6px;}
 .form-note{font-size:.9rem;color:var(--sage-dark);min-height:1.2em;}
 
-/* ---------- Footer ---------- */
+/* ---------- Page légale ---------- */
+.legal-page{padding:80px 0 100px;}
+.legal-page h1{font-size:2.4rem;margin-bottom:1em;}
+.legal-page h2{font-size:1.25rem;margin-top:2em;color:var(--sage-dark);}
+.legal-page p{color:var(--ink-soft);max-width:70ch;}
+.legal-page em{color:var(--gold);font-style:normal;}
 .site-footer{background:var(--ink);color:var(--cream-2);padding:56px 0 30px;text-align:center;}
 .logo-footer{color:#fff;justify-content:center;}
 .logo-footer span{color:var(--blush);}
